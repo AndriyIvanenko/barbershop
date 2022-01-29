@@ -1,0 +1,42 @@
+.mobile-menu-open {
+	fill: $lightTextColor;
+	transition: fill 250ms linear;
+}
+.mobile-menu-close {
+	fill: $primaryTextColor;
+	transition: fill 250ms linear;
+}
+.mobile-menu-btn {
+	width: 40px;
+	height: 40px;
+	border: none;
+	padding: 0;
+	margin-left: auto;
+	align-self: center;
+	background-color: transparent;
+
+	&:hover,
+	&:focus {
+		cursor: pointer;
+		outline: none;
+	}
+	&:hover .mobile-menu-open,
+	&:hover .mobile-menu-close,
+	&:focus .mobile-menu-open,
+	&:focus .mobile-menu-close {
+		fill: $accentColor;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+.mobile-menu-close {
+	display: none;
+}
+.mobile-menu-btn.is-open .mobile-menu-open {
+	display: none;
+}
+.mobile-menu-btn.is-open .mobile-menu-close {
+	display: block;
+}

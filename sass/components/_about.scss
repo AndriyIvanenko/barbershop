@@ -1,0 +1,48 @@
+.section-container--about {
+	flex-direction: row;
+}
+.about__images {
+	display: none;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+.about__img-1 {
+	margin-bottom: 30px;
+}
+
+.about__content {
+	@media screen and (min-width: 768px) {
+		width: 360px;
+		padding-left: 30px;
+	}
+}
+
+.about__title {
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 1.18;
+	letter-spacing: 0.05em;
+}
+.about__text {
+	font-size: 16px;
+	line-height: 1.62;
+	letter-spacing: 0.02em;
+
+	color: $secondaryTextColor;
+
+	margin-bottom: 20px;
+}
+
+.about__text2 {
+	font-size: 14px;
+	line-height: 1.86;
+	letter-spacing: 0.02em;
+
+	color: $secondaryTextColor;
+
+	margin-bottom: 40px;
+}

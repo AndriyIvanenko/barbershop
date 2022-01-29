@@ -14,184 +14,284 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<!-- -------------------------------HEADER------------------------------ -->
+		<!-- ------------------------------------------HEADER------------------------------------------ -->
+
 		<header class="header section section--header">
-			<div class="section-container">
+			<div class="section-container section-container--header">
 				<svg class="logo" width="69" height="55">
-					<use href="./images/icons.svg#icon-logo"></use>
+					<use href="./images/icons.svg#logo"></use>
 				</svg>
-				<nav class="nav">
-					<ul class="nav__list">
-						<li class="nav__item">
-							<a class="nav__link" href="">О нас</a>
+				<button
+					class="mobile-menu-btn"
+					type="button"
+					aria-label="mobile nenu switcher"
+					aria-expanded="false"
+					data-mobile-menu-btn
+				>
+					<svg class="mobile-menu-icon" width="40" height="40">
+						<use class="mobile-menu-open" href="./images/icons.svg#mobile-menu-open"></use>
+						<use class="mobile-menu-close" href="./images/icons.svg#mobile-menu-close"></use>
+					</svg>
+				</button>
+				<div class="menu" data-mobile-menu>
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__link" href="#about" onclick="closeMenu()" data-first-nav-link>О нас</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#prices" onclick="closeMenu()">Услуги и цены</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#team" onclick="closeMenu()">Мастера</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#address" onclick="closeMenu()">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="menu__phone-and-btn">
+						<a class="menu__phone" href="tel:380441111111">+38 044 111 11 11</a>
+						<button class="btn menu__btn" type="button">онлайн-запись</button>
+					</div>
+
+					<ul class="header__sm-list">
+						<li class="header__sm-item">
+							<a class="header__sm-link" href="https://www.instagram.com/" target="_blank" rel="noreffer noopener">
+								Instagram
+							</a>
 						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="">Услуги и цены</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="">Мастера</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="">Контакты</a>
+						<li class="header__sm-item">
+							<a class="header__sm-link" href="https://www.youtube.com/" target="_blank" rel="noreffer noopener">
+								Youtube
+							</a>
 						</li>
 					</ul>
-				</nav>
-				<button class="btn btn--online" type="button">онлайн-запись</button>
-				<a class="header__phone" href="phone:380441111111">+38 044 111 11 11</a>
-				<svg class="logo" width="40" height="40">
-					<use href="./images/icons.svg#icon-menu"></use>
-				</svg>
-				<svg class="logo" width="40" height="40">
-					<use href="./images/icons.svg#icon-close"></use>
-				</svg>
-				<ul class="heder__sm-list">
-					<li class="heder__sm-item">
-						<a class="heder__sm-link" href="">Instagram</a>
-					</li>
-					<li class="heder__sm-item">
-						<a class="heder__sm-link" href="">Youtube</a>
-					</li>
-				</ul>
+				</div>
 			</div>
 		</header>
 
 		<main>
+			<!-- -----------------------------------------HERO------------------------------------- -->
+
 			<section class="hero section">
-				<div class="section-container">
-					<h2 class="section-subtitle hero__sutitle">A hair salon for men in Kyiv</h2>
-					<h1 class="main-title">BarberShop</h1>
+				<div class="section-container section-container--hero">
+					<div class="hero__slide hero__slide1"></div>
+					<div class="hero__slide hero__slide2"></div>
+					<div class="hero__slide hero__slide3"></div>
+					<h2 class="section-subtitle hero__subtitle">A hair salon for men in Kyiv</h2>
+					<h1 class="main-title">
+						BarberShop
+						<button class="hero__slider-nav-btn" type="button">
+							<svg class="hero__slider-nav-icon" width="40" height="30">
+								<use href="./images/icons.svg#icon-slider-nav"></use>
+							</svg>
+						</button>
+					</h1>
 					<p class="hero__text">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
-					<button class="hero__slider-nav" type="button">
-						<svg class="hero__slider-nav-icon" width="17" height="30">
-							<use href="./images/icons.svg#icon-slider-nav"></use>
-						</svg>
-					</button>
-					<button class="hero__prev-slide" type="button">Назад</button>
-					<button class="hero__next-slide" type="button">Вперед</button>
-					<img class="hero__img1" src="./images/mobile/1-hero480.jpg" alt="" />
-					<img class="hero__img2" src="./images/mobile/2-hero480.jpg" alt="" />
-					<img class="hero__img3" src="./images/mobile/3-hero480.jpg" alt="" />
+
+					<div class="hero__slider-nav">
+						<button class="hero__prev-slide" type="button" data-prev-slide>Назад</button>
+						<button class="hero__next-slide" type="button" data-next-slide>Вперед</button>
+					</div>
 				</div>
 			</section>
 
-			<section class="about section">
-				<div class="section-container">
-					<h3 class="section-subtitle about__subtitle">О НАС</h3>
-					<h2 class="section-title about__title">Лучший Барбершоп твоего города</h2>
-					<p class="about__text">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-					<p>
-						Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки
-						нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
-						волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
-					</p>
-					<button class="btn btn--online" type="button">онлайн-запись</button>
+			<!-- ----------------------------------------ABOUT-------------------------------------- -->
+
+			<section class="about section" id="about">
+				<div class="section-container section-container--about">
+					<div class="about__images">
+						<img
+							class="about__img-1"
+							srcset="
+								./images/about/1-about330.jpg    330w,
+								./images/about/1-about330@2x.jpg 660w,
+								./images/about/1-about270.jpg    270w,
+								./images/about/1-about270@2x.jpg 540w
+							"
+							sizes="(min-width: 1280px) 270px, 330px"
+							src="./images/about/1-about330.jpg"
+							alt="client in barbershop"
+						/>
+						<img
+							class="about__img-2"
+							srcset="
+								./images/about/2-about330.jpg    330w,
+								./images/about/2-about330@2x.jpg 660w,
+								./images/about/2-about270.jpg    270w,
+								./images/about/2-about270@2x.jpg 540w
+							"
+							sizes="(min-width: 1280px) 270px, 330px"
+							src="./images/about/2-about330.jpg"
+							alt="client in barbershop"
+						/>
+					</div>
+					<div class="about__content">
+						<h3 class="section-subtitle about__subtitle">О НАС</h3>
+						<h2 class="section-title about__title">Лучший Барбершоп твоего города</h2>
+						<p class="about__text">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+						<p class="about__text2">
+							Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки
+							нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
+							волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
+						</p>
+						<button class="btn btn--online" type="button">онлайн-запись</button>
+					</div>
 				</div>
 			</section>
 
-			<section class="prices section">
-				<div class="section-container">
+			<!-- ---------------------------------------PRICES--------------------------------------- -->
+
+			<section class="prices section" id="prices">
+				<div class="section-container section-container--prices">
 					<h3 class="section-subtitle prices__subtitle">Проведи время в компании лучших мастеров</h3>
 					<h2 class="section-title prices__title">Услуги и цены</h2>
 					<ul class="prices__list">
 						<li class="prices__item">
 							<span class="prices__name">Мужская стрижка</span>
-							<span class="prices_price">от 300 грн.</span>
+							<div class="prices__line"></div>
+							<span class="prices__price">от 300 грн.</span>
 						</li>
 						<li class="prices__item">
 							<span class="prices__name">Стрижка бороды</span>
-							<span class="prices_price">от 200 грн.</span>
+							<div class="prices__line"></div>
+							<span class="prices__price">от 200 грн.</span>
 						</li>
 						<li class="prices__item">
 							<span class="prices__name">Стрижка усов</span>
-							<span class="prices_price">от 200 грн.</span>
+							<div class="prices__line"></div>
+							<span class="prices__price">от 200 грн.</span>
 						</li>
 						<li class="prices__item">
 							<span class="prices__name">Бритье опасной бритвой</span>
-							<span class="prices_price">от 200 грн.</span>
+							<div class="prices__line"></div>
+							<span class="prices__price">от 200 грн.</span>
 						</li>
 						<li class="prices__item">
 							<span class="prices__name">Cтрижка у стажера</span>
-							<span class="prices_price">от 50 грн.</span>
+							<div class="prices__line"></div>
+							<span class="prices__price">от 50 грн.</span>
 						</li>
 						<li class="prices__item">
 							<span class="prices__name">Стрижка под насадку</span>
-							<span class="prices_price">от 200 грн.</span>
+							<div class="prices__line"></div>
+							<span class="prices__price">от 200 грн.</span>
 						</li>
 						<li class="prices__item">
 							<span class="prices__name">Детская стрижка (до 12 лет)</span>
-							<span class="prices_price">от 300 грн.</span>
+							<div class="prices__line"></div>
+							<span class="prices__price">от 300 грн.</span>
 						</li>
 						<li class="prices__item">
 							<span class="prices__name">Камуфлирование седины</span>
-							<span class="prices_price">от 200 грн.</span>
+							<div class="prices__line"></div>
+							<span class="prices__price">от 200 грн.</span>
 						</li>
 					</ul>
-					<button class="btn btn--online" type="button">онлайн-запись</button>
+					<button class="btn btn--prices" type="button">онлайн-запись</button>
 				</div>
 			</section>
 
+			<!-- ---------------------------------------REASONS--------------------------------------- -->
+
 			<section class="reasons section">
-				<div class="section-container">
+				<div class="section-container section-container--reasons">
 					<h3 class="section-subtitle reasons__subtitle">старая традиционная школа</h3>
 					<h2 class="section-title reasons__title">Почему приходят именно к нам?</h2>
+					<p class="reasons__about">
+						О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.
+					</p>
 					<div class="reasons__container">
 						<div class="reasons__first-subcontainer">
 							<div class="reasons__item-container">
 								<span class="reasons__quantity">600</span>
-								<span class="reasons__text">Довольных клиентов в день</span>
+								<span class="reasons__text">
+									Довольных клиентов
+									<br />
+									в день
+								</span>
 							</div>
 							<div class="reasons__item-container">
 								<span class="reasons__quantity">20</span>
-								<span class="reasons__text">Лучших мастеров Киева</span>
+								<span class="reasons__text">
+									Лучших мастеров
+									<br />
+									Киева
+								</span>
 							</div>
 						</div>
 						<div class="reasons__second-subcontainer">
 							<div class="reasons__item-container">
 								<span class="reasons__quantity">50</span>
-								<span class="reasons__text">Наград за отличный сервис</span>
+								<span class="reasons__text">
+									Наград за
+									<br />
+									отличный сервис
+								</span>
 							</div>
 							<div class="reasons__item-container">
 								<span class="reasons__quantity">100</span>
-								<span class="reasons__text">Подарков постоянным клиентам</span>
+								<span class="reasons__text">
+									Подарков постоянным
+									<br />
+									клиентам
+								</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="team section">
-				<div class="section-container">
+			<!-- -----------------------------------------TEAM------------------------------------- -->
+
+			<section class="team section" id="team">
+				<div class="section-container section-container--team">
 					<h3 class="section-subtitle team__subtitle">для настоящих ценителей атмосферы</h3>
 					<h2 class="section-title team__title">Наши мастера</h2>
 					<ul class="team__list">
 						<li class="team__item">
-							<img src="./images/mobile/john418.jpg" alt="john" />
-							<h4 class="team__item-title"></h4>
-							<p class="team__item-text"></p>
+							<img
+								class="team__item-img"
+								srcset="
+									./images/team/john418.jpg    418w,
+									./images/team/john418@2x.jpg 836w,
+									./images/team/john450.jpg    450w,
+									./images/team/john450@2x.jpg 900w,
+									./images/team/john370.jpg    370w,
+									./images/team/john370@2x.jpg 740w
+								"
+								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								src="./images/team/john418.jpg"
+								alt="john"
+							/>
+							<h4 class="team__item-title">John Smith</h4>
+							<p class="team__item-text" lang="en">Extreme Barber</p>
 							<ul class="team__sm-list">
 								<li class="team__sm-item">
-									<a class="team__sm-link" href="">
+									<a class="team__sm-link" href="https://www.instagram.com/" target="_blank" rel="noreffer noopener">
 										<svg class="team__sm-icon" width="20" height="20">
 											<use href="./images/icons.svg#icon-instagram"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="team__sm-item">
-									<a class="team__sm-link" href="">
+									<a class="team__sm-link" href="https://twitter.com/" target="_blank" rel="noreffer noopener">
 										<svg class="team__sm-icon" width="20" height="20">
 											<use href="./images/icons.svg#icon-twitter"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="team__sm-item">
-									<a class="team__sm-link" href="">
+									<a class="team__sm-link" href="https://www.facebook.com/" target="_blank" rel="noreffer noopener">
 										<svg class="team__sm-icon" width="20" height="20">
 											<use href="./images/icons.svg#icon-facebook"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="team__sm-item">
-									<a class="team__sm-link" href="">
+									<a class="team__sm-link" href="https://www.linkedin.com/" target="_blank" rel="noreffer noopener">
 										<svg class="team__sm-icon" width="20" height="20">
 											<use href="./images/icons.svg#icon-linkedin"></use>
 										</svg>
@@ -200,33 +300,46 @@
 							</ul>
 						</li>
 						<li class="team__item">
-							<img src="./images/mobile/michele418.jpg" alt="michele" />
-							<h4 class="team__item-title"></h4>
-							<p class="team__item-text"></p>
+							<img
+								class="team__item-img"
+								srcset="
+									./images/team/michele418.jpg    418w,
+									./images/team/michele418@2x.jpg 836w,
+									./images/team/michele450.jpg    450w,
+									./images/team/michele450@2x.jpg 900w,
+									./images/team/michele370.jpg    370w,
+									./images/team/michele370@2x.jpg 740w
+								"
+								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								src="./images/team/michele418.jpg"
+								alt="michele"
+							/>
+							<h4 class="team__item-title">Michele Doe</h4>
+							<p class="team__item-text" lang="en">Extreme Barber</p>
 							<ul class="team__sm-list">
 								<li class="team__sm-item">
-									<a class="team__sm-link" href="">
+									<a class="team__sm-link" href="https://www.instagram.com/" target="_blank" rel="noreffer noopener">
 										<svg class="team__sm-icon" width="20" height="20">
 											<use href="./images/icons.svg#icon-instagram"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="team__sm-item">
-									<a class="team__sm-link" href="">
+									<a class="team__sm-link" href="https://twitter.com/" target="_blank" rel="noreffer noopener">
 										<svg class="team__sm-icon" width="20" height="20">
 											<use href="./images/icons.svg#icon-twitter"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="team__sm-item">
-									<a class="team__sm-link" href="">
+									<a class="team__sm-link" href="https://www.facebook.com/" target="_blank" rel="noreffer noopener">
 										<svg class="team__sm-icon" width="20" height="20">
 											<use href="./images/icons.svg#icon-facebook"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="team__sm-item">
-									<a class="team__sm-link" href="">
+									<a class="team__sm-link" href="https://www.linkedin.com/" target="_blank" rel="noreffer noopener">
 										<svg class="team__sm-icon" width="20" height="20">
 											<use href="./images/icons.svg#icon-linkedin"></use>
 										</svg>
@@ -235,33 +348,46 @@
 							</ul>
 						</li>
 						<li class="team__item">
-							<img src="./images/mobile/alan418.jpg" alt="alan" />
-							<h4 class="team__item-title"></h4>
-							<p class="team__item-text"></p>
+							<img
+								class="team__item-img"
+								srcset="
+									./images/team/alan418.jpg    418w,
+									./images/team/alan418@2x.jpg 836w,
+									./images/team/alan450.jpg    450w,
+									./images/team/alan450@2x.jpg 900w,
+									./images/team/alan370.jpg    370w,
+									./images/team/alan370@2x.jpg 740w
+								"
+								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								src="./images/team/alan418.jpg"
+								alt="alan"
+							/>
+							<h4 class="team__item-title">Alan Black</h4>
+							<p class="team__item-text" lang="en">Extreme Barber</p>
 							<ul class="team__sm-list">
 								<li class="team__sm-item">
-									<a class="team__sm-link" href="">
+									<a class="team__sm-link" href="https://www.instagram.com/" target="_blank" rel="noreffer noopener">
 										<svg class="team__sm-icon" width="20" height="20">
 											<use href="./images/icons.svg#icon-instagram"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="team__sm-item">
-									<a class="team__sm-link" href="">
+									<a class="team__sm-link" href="https://twitter.com/" target="_blank" rel="noreffer noopener">
 										<svg class="team__sm-icon" width="20" height="20">
 											<use href="./images/icons.svg#icon-twitter"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="team__sm-item">
-									<a class="team__sm-link" href="">
+									<a class="team__sm-link" href="https://www.facebook.com/" target="_blank" rel="noreffer noopener">
 										<svg class="team__sm-icon" width="20" height="20">
 											<use href="./images/icons.svg#icon-facebook"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="team__sm-item">
-									<a class="team__sm-link" href="">
+									<a class="team__sm-link" href="https://www.linkedin.com/" target="_blank" rel="noreffer noopener">
 										<svg class="team__sm-icon" width="20" height="20">
 											<use href="./images/icons.svg#icon-linkedin"></use>
 										</svg>
@@ -273,93 +399,169 @@
 				</div>
 			</section>
 
+			<!-- -------------------------------------ABOUT BARBER------------------------------------- -->
+
 			<section class="about-barber section">
-				<div class="section-container">
+				<div class="section-container section-container--abou-barber">
 					<h3 class="section-subtitle about-barber__subtitle">На латинском языке “барба” означает “борода”</h3>
 					<h2 class="section-title about-barber__title is-hidden">Происхождение слова "барбер</h2>
 					<ul class="about-barber__list">
 						<li class="about-barber__item">
-							<img src="./images/mobile/1-barber-about418.jpg" alt="" />
+							<img
+								srcset="
+									./images/barber-about/1-barber-about418.jpg    418w,
+									./images/barber-about/1-barber-about418@2x.jpg 836w,
+									./images/barber-about/1-barber-about330.jpg    330w,
+									./images/barber-about/1-barber-about330@2x.jpg 660w,
+									./images/barber-about/1-barber-about270.jpg    270w,
+									./images/barber-about/1-barber-about270@2x.jpg 540w
+								"
+								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								src="./images/barber-about/1-barber-about418.jpg"
+								alt="barber works"
+							/>
 						</li>
 						<li class="about-barber__item">
-							<img src="./images/mobile/2-barber-about418.jpg" alt="" />
+							<img
+								srcset="
+									./images/barber-about/2-barber-about418.jpg    418w,
+									./images/barber-about/2-barber-about418@2x.jpg 836w,
+									./images/barber-about/2-barber-about330.jpg    330w,
+									./images/barber-about/2-barber-about330@2x.jpg 660w,
+									./images/barber-about/2-barber-about270.jpg    270w,
+									./images/barber-about/2-barber-about270@2x.jpg 540w
+								"
+								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								src="./images/barber-about/2-barber-about418.jpg"
+								alt="barber works"
+							/>
 						</li>
 						<li class="about-barber__item">
-							<img src="./images/mobile/3-barber-about418.jpg" alt="" />
+							<img
+								srcset="
+									./images/barber-about/3-barber-about418.jpg    418w,
+									./images/barber-about/3-barber-about418@2x.jpg 836w,
+									./images/barber-about/3-barber-about330.jpg    330w,
+									./images/barber-about/3-barber-about330@2x.jpg 660w,
+									./images/barber-about/3-barber-about270.jpg    270w,
+									./images/barber-about/3-barber-about270@2x.jpg 540w
+								"
+								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								src="./images/barber-about/3-barber-about418.jpg"
+								alt="barber works"
+							/>
 						</li>
 						<li class="about-barber__item">
-							<img src="./images/mobile/4-barber-about418.jpg" alt="" />
+							<img
+								srcset="
+									./images/barber-about/4-barber-about418.jpg    418w,
+									./images/barber-about/4-barber-about418@2x.jpg 836w,
+									./images/barber-about/4-barber-about330.jpg    330w,
+									./images/barber-about/4-barber-about330@2x.jpg 660w,
+									./images/barber-about/4-barber-about270.jpg    270w,
+									./images/barber-about/4-barber-about270@2x.jpg 540w
+								"
+								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								src="./images/barber-about/4-barber-about418.jpg"
+								alt="barber works"
+							/>
 						</li>
 					</ul>
 				</div>
 			</section>
 		</main>
+
+		<!-- -------------------------------------------FOOTER--------------------------------------- -->
+
 		<footer class="footer section">
-			<div class="section-container">
+			<div class="section-container section-container--footer">
 				<div class="footer__first-container">
 					<form class="footer__form" name="online-booking">
-						<label class="footer__input-label">
-							Имя*
-							<input class="footer__input" type="text" name="name" />
-						</label>
-						<label class="footer__input-label">
-							Телефон*
-							<input class="footer__input" type="tel" name="tel" />
-						</label>
-						<label class="footer__input-label">
-							сообщение
-							<input class="footer__input" type="text" name="message" />
-						</label>
+						<p class="footer__form-name">Онлайн-запись</p>
+						<div class="footer__inputs-list">
+							<input class="footer__input" type="text" name="name" placeholder="Имя*" autocomplete="off" />
+							<input class="footer__input" type="tel" name="tel" placeholder="Телефон*" autocomplete="off" />
+						</div>
+						<textarea class="footer__textarea" name="message" placeholder="Cообщение"></textarea>
 						<button class="btn btn--submit" type="submit">отправить</button>
 					</form>
 				</div>
 				<div class="footer__second-container">
-					<address class="address">
+					<address class="address" id="address">
 						<h2 class="address__title">Контакты</h2>
-						<a
-							class="address__item"
-							href="https://goo.gl/maps/YF8NV4Uzb5w6smcRA"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<svg class="address__icon" width="24" height="24">
-								<use href="./images/icons.svg#icon-map-pin"></use>
-							</svg>
-							ул. Васильковая, 7А, Киев, 08132
-						</a>
-						<a class="address__item" href="tel:380441111111">
-							<svg class="address__icon" width="24" height="24">
-								<use href="./images/icons.svg#icon-phone"></use>
-							</svg>
-							+38 044 111 11 11
-						</a>
-						<a class="address__item" href="mailto:barbershop@email.com">
-							<svg class="address__icon" width="24" height="24">
-								<use href="./images/icons.svg#icon-mail"></use>
-							</svg>
-							barbershop@email.com
-						</a>
+						<ul class="address__list">
+							<li class="address__item">
+								<a
+									class="address__link"
+									href="https://goo.gl/maps/YF8NV4Uzb5w6smcRA"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<svg class="address__icon" width="24" height="24">
+										<use href="./images/icons.svg#icon-map-pin"></use>
+									</svg>
+									ул. Васильковая, 7А, Киев, 08132
+								</a>
+							</li>
+							<li class="address__item">
+								<a class="address__link" href="tel:380441111111">
+									<svg class="address__icon" width="24" height="24">
+										<use href="./images/icons.svg#icon-phone"></use>
+									</svg>
+									+38 044 111 11 11
+								</a>
+							</li>
+							<li class="address__item">
+								<a class="address__link" href="mailto:barbershop@email.com">
+									<svg class="address__icon" width="24" height="24">
+										<use href="./images/icons.svg#icon-mail"></use>
+									</svg>
+									barbershop@email.com
+								</a>
+							</li>
+						</ul>
 					</address>
-					<span class="footer__time-table-title">время работы</span>
-					<span class="footer__time-table">Ежедневно с 9:00 до 22:00</span>
+					<div class="address__time-table-container">
+						<p class="address__time-table-title">время работы</p>
+						<p class="address__time-table">Ежедневно с 9:00 до 22:00</p>
+					</div>
 				</div>
 				<div class="footer__bottom">
 					<ul class="footer__sm-list">
 						<li class="footer__sm-item">
-							<a class="footer__sm-link" href="">Instagram</a>
+							<a class="footer__sm-link" href="https://www.instagram.com/">Instagram</a>
 						</li>
 						<li class="footer__sm-item">
-							<a class="footer__sm-link" href="">Youtube</a>
+							<a class="footer__sm-link" href="https://www.youtube.com/">Youtube</a>
 						</li>
 					</ul>
 					<span class="footer__copyright">
-						<svg class="address__icon" width="24" height="24">
+						<svg class="footer__copyright-icon" width="12" height="12">
 							<use href="./images/icons.svg#icon-copyright"></use>
 						</svg>
-						Copyright 2020
+						&nbspCopyright 2020
 					</span>
 				</div>
 			</div>
 		</footer>
+
+		<script src="./js/mobile-menu.js"></script>
+		<script src="./js/slider.js"></script>
+		<script>
+			function closeMenu() {
+				const mobileMenu = document.querySelector("[data-mobile-menu]");
+				const mobileMenuBtn = document.querySelector("[data-mobile-menu-btn]");
+				const expanded = mobileMenuBtn.getAttribute("aria-expanded") === "true" || false;
+
+				mobileMenuBtn.setAttribute("aria-expanded", !expanded);
+				mobileMenu.classList.toggle("is-open");
+				mobileMenuBtn.classList.toggle("is-open");
+				document.body.classList.toggle("modal-open");
+			}
+		</script>
+		<script>
+			const firstNavItem = document.querySelector("[data-first-nav-link]");
+			firstNavItem.focus();
+		</script>
 	</body>
 </html>
