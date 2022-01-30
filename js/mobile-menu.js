@@ -10,7 +10,7 @@
     mobileMenuBtn.classList.toggle('is-open');
     mobileMenuBtn.setAttribute('aria-expanded', !expanded);
     mobileMenu.classList.toggle('is-open');
-    document.body.classList.toggle("modal-open");
+    document.body.classList.toggle("mobile-menu-open");
 
     firstNavItem.focus();
   }
