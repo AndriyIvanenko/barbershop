@@ -1,3 +1,19 @@
+.address {
+	margin-bottom: 44px;
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: 0;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: 330px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 70px;
+	}
+}
+
 .address__title {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -42,10 +58,15 @@
 	stroke: currentColor;
 	margin-right: 16px;
 }
-.address__list {
-	margin-bottom: 44px;
-}
 
+.address__time-table-container {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: 330px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
 .address__time-table-title {
 	display: flex;
 	align-items: center;
@@ -79,20 +100,4 @@
 	letter-spacing: 0.02em;
 
 	color: #9da4bd;
-}
-
-@media screen and (min-width: 1200px) {
-	.footer__second-container {
-		display: flex;
-		flex-direction: column;
-		padding-left: 100px;
-	}
-
-	.address {
-		margin-bottom: 70px;
-	}
-
-	.address__list {
-		margin-bottom: 0;
-	}
 }
