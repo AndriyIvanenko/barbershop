@@ -21,7 +21,7 @@
 		}
 	}
 
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: 1200px) {
 		max-width: 1280px;
 		background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
 			url(../images/prices/prices1280.jpg);
@@ -44,13 +44,35 @@
 	color: $lightTextColor;
 }
 
-.prices__list {
+.prices__container {
 	display: flex;
 	flex-direction: column;
 	background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 
+	@media screen and (min-width: 1200px) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+.prices__list-1 {
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (min-width: 1200px) {
+		background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+	}
+
 	padding: 30px 28px;
-	margin-bottom: 50px;
+}
+.prices__list-2 {
+	display: flex;
+	flex-direction: column;
+	padding: 0 28px 30px 28px;
+
+	@media screen and (min-width: 1200px) {
+		background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+		padding-top: 30px;
+	}
 }
 .prices__item {
 	display: flex;
@@ -58,6 +80,10 @@
 
 	&:not(:last-child) {
 		margin-bottom: 30px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 505px;
 	}
 }
 
@@ -96,4 +122,5 @@
 .btn--prices {
 	align-self: center;
 	color: $lightTextColor;
+	margin-top: 50px;
 }

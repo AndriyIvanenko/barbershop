@@ -11,6 +11,7 @@
     mobileMenuBtn.setAttribute('aria-expanded', !expanded);
     mobileMenu.classList.toggle('is-open');
     document.body.classList.toggle("modal-open");
+
     firstNavItem.focus();
   }
 })();

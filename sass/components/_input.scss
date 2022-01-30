@@ -73,6 +73,10 @@
 		width: 330px;
 		display: inline-block;
 	}
+
+	@media screen and (min-width: 1200px) {
+		width: 265px;
+	}
 }
 
 .footer__textarea {

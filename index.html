@@ -104,28 +104,28 @@
 				<div class="section-container section-container--about">
 					<div class="about__images">
 						<img
-							class="about__img-1"
-							srcset="
-								./images/about/1-about330.jpg    330w,
-								./images/about/1-about330@2x.jpg 660w,
-								./images/about/1-about270.jpg    270w,
-								./images/about/1-about270@2x.jpg 540w
-							"
-							sizes="(min-width: 1280px) 270px, 330px"
+							class="about__img-tablet"
+							srcset="./images/about/1-about330.jpg 1x, ./images/about/1-about330@2x.jpg 2x"
 							src="./images/about/1-about330.jpg"
 							alt="client in barbershop"
 						/>
 						<img
-							class="about__img-2"
-							srcset="
-								./images/about/2-about330.jpg    330w,
-								./images/about/2-about330@2x.jpg 660w,
-								./images/about/2-about270.jpg    270w,
-								./images/about/2-about270@2x.jpg 540w
-							"
-							sizes="(min-width: 1280px) 270px, 330px"
-							src="./images/about/2-about330.jpg"
+							class="about__img-desktop"
+							srcset="./images/about/1-about270.jpg 1x, ./images/about/1-about270@2x.jpg 2x"
+							src="./images/about/1-about270.jpg"
 							alt="client in barbershop"
+						/>
+						<img
+							class="about__img-tablet"
+							srcset="./images/about/2-about330.jpg 1x, ./images/about/2-about330@2x.jpg 2x"
+							src="./images/about/2-about330.jpg"
+							alt="barber works"
+						/>
+						<img
+							class="about__img-desktop"
+							srcset="./images/about/2-about270.jpg 1x, ./images/about/2-about270@2x.jpg 2x"
+							src="./images/about/2-about270.jpg"
+							alt="barber works"
 						/>
 					</div>
 					<div class="about__content">
@@ -148,48 +148,56 @@
 				<div class="section-container section-container--prices">
 					<h3 class="section-subtitle prices__subtitle">Проведи время в компании лучших мастеров</h3>
 					<h2 class="section-title prices__title">Услуги и цены</h2>
-					<ul class="prices__list">
-						<li class="prices__item">
-							<span class="prices__name">Мужская стрижка</span>
-							<div class="prices__line"></div>
-							<span class="prices__price">от 300 грн.</span>
-						</li>
-						<li class="prices__item">
-							<span class="prices__name">Стрижка бороды</span>
-							<div class="prices__line"></div>
-							<span class="prices__price">от 200 грн.</span>
-						</li>
-						<li class="prices__item">
-							<span class="prices__name">Стрижка усов</span>
-							<div class="prices__line"></div>
-							<span class="prices__price">от 200 грн.</span>
-						</li>
-						<li class="prices__item">
-							<span class="prices__name">Бритье опасной бритвой</span>
-							<div class="prices__line"></div>
-							<span class="prices__price">от 200 грн.</span>
-						</li>
-						<li class="prices__item">
-							<span class="prices__name">Cтрижка у стажера</span>
-							<div class="prices__line"></div>
-							<span class="prices__price">от 50 грн.</span>
-						</li>
-						<li class="prices__item">
-							<span class="prices__name">Стрижка под насадку</span>
-							<div class="prices__line"></div>
-							<span class="prices__price">от 200 грн.</span>
-						</li>
-						<li class="prices__item">
-							<span class="prices__name">Детская стрижка (до 12 лет)</span>
-							<div class="prices__line"></div>
-							<span class="prices__price">от 300 грн.</span>
-						</li>
-						<li class="prices__item">
-							<span class="prices__name">Камуфлирование седины</span>
-							<div class="prices__line"></div>
-							<span class="prices__price">от 200 грн.</span>
-						</li>
-					</ul>
+					<div class="prices__container">
+						<div class="prices__subcontainer-1">
+							<ul class="prices__list-1">
+								<li class="prices__item">
+									<span class="prices__name">Мужская стрижка</span>
+									<div class="prices__line"></div>
+									<span class="prices__price">от 300 грн.</span>
+								</li>
+								<li class="prices__item">
+									<span class="prices__name">Стрижка бороды</span>
+									<div class="prices__line"></div>
+									<span class="prices__price">от 200 грн.</span>
+								</li>
+								<li class="prices__item">
+									<span class="prices__name">Стрижка усов</span>
+									<div class="prices__line"></div>
+									<span class="prices__price">от 200 грн.</span>
+								</li>
+								<li class="prices__item">
+									<span class="prices__name">Бритье опасной бритвой</span>
+									<div class="prices__line"></div>
+									<span class="prices__price">от 200 грн.</span>
+								</li>
+							</ul>
+						</div>
+						<div class="prices__subcontainer-2">
+							<ul class="prices__list-2">
+								<li class="prices__item">
+									<span class="prices__name">Cтрижка у стажера</span>
+									<div class="prices__line"></div>
+									<span class="prices__price">от 50 грн.</span>
+								</li>
+								<li class="prices__item">
+									<span class="prices__name">Стрижка под насадку</span>
+									<div class="prices__line"></div>
+									<span class="prices__price">от 200 грн.</span>
+								</li>
+								<li class="prices__item">
+									<span class="prices__name">Детская стрижка (до 12 лет)</span>
+									<div class="prices__line"></div>
+									<span class="prices__price">от 300 грн.</span>
+								</li>
+								<li class="prices__item">
+									<span class="prices__name">Камуфлирование седины</span>
+									<div class="prices__line"></div>
+									<span class="prices__price">от 200 грн.</span>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<button class="btn btn--prices" type="button">онлайн-запись</button>
 				</div>
 			</section>
@@ -198,11 +206,13 @@
 
 			<section class="reasons section">
 				<div class="section-container section-container--reasons">
-					<h3 class="section-subtitle reasons__subtitle">старая традиционная школа</h3>
-					<h2 class="section-title reasons__title">Почему приходят именно к нам?</h2>
-					<p class="reasons__about">
-						О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.
-					</p>
+					<div class="reasons__description">
+						<h3 class="section-subtitle reasons__subtitle">старая традиционная школа</h3>
+						<h2 class="section-title reasons__title">Почему приходят именно к нам?</h2>
+						<p class="reasons__about">
+							О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.
+						</p>
+					</div>
 					<div class="reasons__container">
 						<div class="reasons__first-subcontainer">
 							<div class="reasons__item-container">
@@ -262,7 +272,7 @@
 									./images/team/john370.jpg    370w,
 									./images/team/john370@2x.jpg 740w
 								"
-								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
 								src="./images/team/john418.jpg"
 								alt="john"
 							/>
@@ -310,7 +320,7 @@
 									./images/team/michele370.jpg    370w,
 									./images/team/michele370@2x.jpg 740w
 								"
-								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
 								src="./images/team/michele418.jpg"
 								alt="michele"
 							/>
@@ -358,7 +368,7 @@
 									./images/team/alan370.jpg    370w,
 									./images/team/alan370@2x.jpg 740w
 								"
-								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
 								src="./images/team/alan418.jpg"
 								alt="alan"
 							/>
@@ -416,7 +426,7 @@
 									./images/barber-about/1-barber-about270.jpg    270w,
 									./images/barber-about/1-barber-about270@2x.jpg 540w
 								"
-								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
 								src="./images/barber-about/1-barber-about418.jpg"
 								alt="barber works"
 							/>
@@ -431,7 +441,7 @@
 									./images/barber-about/2-barber-about270.jpg    270w,
 									./images/barber-about/2-barber-about270@2x.jpg 540w
 								"
-								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
 								src="./images/barber-about/2-barber-about418.jpg"
 								alt="barber works"
 							/>
@@ -446,7 +456,7 @@
 									./images/barber-about/3-barber-about270.jpg    270w,
 									./images/barber-about/3-barber-about270@2x.jpg 540w
 								"
-								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
 								src="./images/barber-about/3-barber-about418.jpg"
 								alt="barber works"
 							/>
@@ -461,7 +471,7 @@
 									./images/barber-about/4-barber-about270.jpg    270w,
 									./images/barber-about/4-barber-about270@2x.jpg 540w
 								"
-								sizes="(min-width: 1280px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
+								sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418pxpx, 100vw"
 								src="./images/barber-about/4-barber-about418.jpg"
 								alt="barber works"
 							/>
@@ -560,8 +570,7 @@
 			}
 		</script>
 		<script>
-			const firstNavItem = document.querySelector("[data-first-nav-link]");
-			firstNavItem.focus();
+			document.querySelector("[data-first-nav-link]").focus();
 		</script>
 	</body>
 </html>

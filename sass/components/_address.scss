@@ -80,3 +80,19 @@
 
 	color: #9da4bd;
 }
+
+@media screen and (min-width: 1200px) {
+	.footer__second-container {
+		display: flex;
+		flex-direction: column;
+		padding-left: 100px;
+	}
+
+	.address {
+		margin-bottom: 70px;
+	}
+
+	.address__list {
+		margin-bottom: 0;
+	}
+}

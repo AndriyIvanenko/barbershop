@@ -15,39 +15,39 @@
 	@media screen and (min-width: 768px) {
 		padding: 280px 76px 40px 223px;
 	}
-}
 
-@media screen and (max-width: 767px) {
-	.hero__slide {
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		z-index: -1;
-
-		width: 100vw;
-		height: 120.83vw;
-
-		@media screen and (min-width: 480px) {
-			width: 480px;
-			height: 580px;
-		}
-
-		transition: opacity 250ms linear;
+	@media screen and (min-width: 1200px) {
+		padding: 272px 49px 34px 208px;
 	}
 }
-@media screen and (min-width: 768px) {
-	.hero__slide {
-		position: absolute;
+
+.hero__slide {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+
+	width: 100vw;
+	height: 120.83vw;
+
+	@media screen and (min-width: 480px) {
+		width: 480px;
+		height: 580px;
+	}
+
+	@media screen and (min-width: 768px) {
 		width: 577px;
 		height: 680px;
-		// transform: translateX(-194px);
-		top: 0;
 		right: 39px;
-		z-index: -1;
-
-		transition: opacity 250ms linear;
 	}
+
+	@media screen and (min-width: 1200px) {
+		width: 1073px;
+		height: 680px;
+		right: 15px;
+	}
+
+	transition: opacity 250ms linear;
 }
 
 .hero__slide1 {
@@ -70,7 +70,7 @@
 		}
 	}
 
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: 1200px) {
 		background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/1-hero1073.jpg);
 
 		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -99,7 +99,7 @@
 		}
 	}
 
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: 1200px) {
 		background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/2-hero1073.jpg);
 
 		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -128,7 +128,7 @@
 		}
 	}
 
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: 1200px) {
 		background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/3-hero1073.jpg);
 
 		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -161,6 +161,11 @@
 	@media screen and (min-width: 480px) {
 		font-size: 48px;
 		margin-bottom: 20px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 72px;
+		line-height: 1.18;
 	}
 }
 .hero__slider-nav-btn {
@@ -196,7 +201,15 @@
 	}
 
 	@media screen and (min-width: 768px) {
+		width: 349px;
 		margin-bottom: 146px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 400px;
+		font-size: 18px;
+		line-height: 1.66;
+		margin-bottom: 150px;
 	}
 }
 
