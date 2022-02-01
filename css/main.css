@@ -11,7 +11,7 @@ body {
   color: #303030;
 }
 
-body.modal-open {
+body.mobile-menu-open {
   overflow: hidden;
 }
 
@@ -443,7 +443,6 @@ button {
   width: max-content;
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   background-color: transparent;
@@ -767,6 +766,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 10vw;
@@ -794,8 +796,18 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 30px;
+  height: 30px;
   border: none;
   background-color: transparent;
   margin-left: auto;
@@ -803,6 +815,17 @@ button {
 
 .hero__slider-nav-btn:hover, .hero__slider-nav-btn:focus {
   outline: none;
+}
+
+.hero__slider-nav-btn .slide {
+  width: 10px;
+  height: 2px;
+  background-color: #9da4bd;
+}
+
+.hero__slider-nav-btn .active-slide {
+  width: 20px;
+  background-color: #fff;
 }
 
 .hero__text {
@@ -1659,7 +1682,7 @@ button {
 
 .footer__form-name {
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 8.75vw;
   line-height: 1.17;
   letter-spacing: 0.05em;

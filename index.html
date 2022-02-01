@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Лучший барбершоп Киева" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -11,7 +12,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/main.min.css" />
-		<title>Document</title>
+		<title>Барбершоп</title>
 	</head>
 	<body>
 		<!-- ------------------------------------------HEADER------------------------------------------ -->
@@ -83,17 +84,22 @@
 					<h2 class="section-subtitle hero__subtitle">A hair salon for men in Kyiv</h2>
 					<h1 class="main-title">
 						BarberShop
-						<button class="hero__slider-nav-btn" type="button">
+						<!-- <button class="hero__slider-nav-btn" type="button" aria-label="slides switcher">
 							<svg class="hero__slider-nav-icon" width="40" height="30">
 								<use href="./images/icons.svg#icon-slider-nav"></use>
 							</svg>
+						</button> -->
+						<button class="hero__slider-nav-btn" type="button" aria-label="slides switcher" data-slide-switcher>
+							<div class="slide"></div>
+							<div class="slide"></div>
+							<div class="slide"></div>
 						</button>
 					</h1>
 					<p class="hero__text">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
 
 					<div class="hero__slider-nav">
-						<button class="hero__prev-slide" type="button" data-prev-slide>Назад</button>
-						<button class="hero__next-slide" type="button" data-next-slide>Вперед</button>
+						<button class="hero__prev-slide" type="button" aria-label="previous slide" data-prev-slide>Назад</button>
+						<button class="hero__next-slide" type="button" aria-label="next slide" data-next-slide>Вперед</button>
 					</div>
 				</div>
 			</section>
