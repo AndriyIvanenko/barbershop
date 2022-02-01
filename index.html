@@ -38,33 +38,43 @@
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a class="nav__link" href="#about" onclick="closeMenu()" data-first-nav-link>О нас</a>
+								<a class="nav__link menu-link" href="#about" onclick="closeMenu()" data-first-nav-link>О нас</a>
 							</li>
 							<li class="nav__item">
-								<a class="nav__link" href="#prices" onclick="closeMenu()">Услуги и цены</a>
+								<a class="nav__link menu-link" href="#prices" onclick="closeMenu()">Услуги и цены</a>
 							</li>
 							<li class="nav__item">
-								<a class="nav__link" href="#team" onclick="closeMenu()">Мастера</a>
+								<a class="nav__link menu-link" href="#team" onclick="closeMenu()">Мастера</a>
 							</li>
 							<li class="nav__item">
-								<a class="nav__link" href="#address" onclick="closeMenu()">Контакты</a>
+								<a class="nav__link menu-link" href="#address" onclick="closeMenu()">Контакты</a>
 							</li>
 						</ul>
 					</nav>
 
 					<div class="menu__phone-and-btn">
-						<a class="menu__phone" href="tel:380441111111">+38 044 111 11 11</a>
+						<a class="menu__phone menu-link" href="tel:380441111111">+38 044 111 11 11</a>
 						<button class="btn menu__btn" type="button">онлайн-запись</button>
 					</div>
 
 					<ul class="header__sm-list">
 						<li class="header__sm-item">
-							<a class="header__sm-link" href="https://www.instagram.com/" target="_blank" rel="noreffer noopener">
+							<a
+								class="header__sm-link menu-link"
+								href="https://www.instagram.com/"
+								target="_blank"
+								rel="noreffer noopener"
+							>
 								Instagram
 							</a>
 						</li>
 						<li class="header__sm-item">
-							<a class="header__sm-link" href="https://www.youtube.com/" target="_blank" rel="noreffer noopener">
+							<a
+								class="header__sm-link menu-link"
+								href="https://www.youtube.com/"
+								target="_blank"
+								rel="noreffer noopener"
+							>
 								Youtube
 							</a>
 						</li>
@@ -563,17 +573,6 @@
 
 		<script src="./js/mobile-menu.js"></script>
 		<script src="./js/slider.js"></script>
-		<script>
-			function closeMenu() {
-				const mobileMenu = document.querySelector("[data-mobile-menu]");
-				const mobileMenuBtn = document.querySelector("[data-mobile-menu-btn]");
-				const expanded = mobileMenuBtn.getAttribute("aria-expanded") === "true" || false;
-
-				mobileMenuBtn.setAttribute("aria-expanded", !expanded);
-				mobileMenu.classList.toggle("is-open");
-				mobileMenuBtn.classList.toggle("is-open");
-			}
-		</script>
 		<script>
 			document.querySelector("[data-first-nav-link]").focus();
 		</script>
