@@ -192,6 +192,8 @@
 		width: 10px;
 		height: 2px;
 		background-color: #9da4bd;
+
+		transition: background-color 250ms linear, width 250ms linear;
 	}
 	& .active-slide {
 		width: 20px;
@@ -218,14 +220,14 @@
 
 	@media screen and (min-width: 768px) {
 		width: 349px;
-		margin-bottom: 146px;
+		margin-bottom: 172px;
 	}
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 1200px) {
 		width: 400px;
 		font-size: 18px;
 		line-height: 1.66;
-		margin-bottom: 150px;
+		margin-bottom: 148px;
 	}
 }
 

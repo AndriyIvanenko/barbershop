@@ -20,12 +20,12 @@
 		cursor: pointer;
 		outline: none;
 	}
-	&:hover .mobile-menu-open,
-	&:hover .mobile-menu-close,
-	&:focus .mobile-menu-open,
-	&:focus .mobile-menu-close {
-		fill: $accentColor;
-	}
+	// &:hover .mobile-menu-open,
+	// &:hover .mobile-menu-close,
+	// &:focus .mobile-menu-open,
+	// &:focus .mobile-menu-close {
+	// 	fill: $accentColor;
+	// }
 
 	@media screen and (min-width: 768px) {
 		display: none;

@@ -3,22 +3,22 @@
 	flex-direction: column;
 
 	width: 100vw;
-	padding: 0 6.46vw;
+	padding: 4.17vw 6.46vw 0 6.46vw;
 	margin-left: auto;
 	margin-right: auto;
 
 	@media screen and (min-width: 480px) {
 		width: 480px;
-		padding: 0 31px;
+		padding: 20px 31px 0 31px;
 	}
 
 	@media screen and (min-width: 768px) {
 		width: 768px;
-		padding: 0 39px;
+		padding: 20px 39px 0 39px;
 	}
 
 	@media screen and (min-width: 1200px) {
 		width: 1200px;
-		padding: 0 15px;
+		padding: 20px 15px 0 15px;
 	}
 }

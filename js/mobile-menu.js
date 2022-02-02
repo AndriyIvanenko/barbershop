@@ -15,7 +15,6 @@
 		firstNavItem.focus();
 	}
 
-	// const mediaQuery = window.matchMedia("(max-width: 767px)");
 	// if (window.innerWidth < 768) {
 	let menuLinks = document.getElementsByClassName("menu-link");
 	for (let menuLink of menuLinks) {

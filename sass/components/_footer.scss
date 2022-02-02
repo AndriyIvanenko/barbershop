@@ -12,11 +12,11 @@
 
 .footer__first-container {
 	background-color: #191c26;
-	padding: 84px 30px;
+	padding: 64px 30px 84px 30px;
 
 	@media screen and (min-width: 1200px) {
 		width: 640px;
-		padding: 130px 30px 192px 55px;
+		padding: 110px 30px 192px 55px;
 		margin-left: -40px;
 	}
 }

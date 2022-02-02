@@ -67,19 +67,19 @@ button {
 }
 
 .section {
-  padding: 84px 0;
+  padding: 64px 0;
   margin: auto;
 }
 
 @media screen and (min-width: 768px) {
   .section {
-    padding: 100px 0;
+    padding: 80px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding: 130px 0;
+    padding: 110px 0;
   }
 }
 
@@ -92,7 +92,7 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100vw;
-  padding: 0 6.46vw;
+  padding: 4.17vw 6.46vw 0 6.46vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -100,21 +100,21 @@ button {
 @media screen and (min-width: 480px) {
   .section-container {
     width: 480px;
-    padding: 0 31px;
+    padding: 20px 31px 0 31px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .section-container {
     width: 768px;
-    padding: 0 39px;
+    padding: 20px 39px 0 39px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-container {
     width: 1200px;
-    padding: 0 15px;
+    padding: 20px 15px 0 15px;
   }
 }
 
@@ -155,13 +155,6 @@ button {
 .mobile-menu-btn:hover, .mobile-menu-btn:focus {
   cursor: pointer;
   outline: none;
-}
-
-.mobile-menu-btn:hover .mobile-menu-open,
-.mobile-menu-btn:hover .mobile-menu-close,
-.mobile-menu-btn:focus .mobile-menu-open,
-.mobile-menu-btn:focus .mobile-menu-close {
-  fill: #ff6c00;
 }
 
 @media screen and (min-width: 768px) {
@@ -821,6 +814,8 @@ button {
   width: 10px;
   height: 2px;
   background-color: #9da4bd;
+  -webkit-transition: background-color 250ms linear, width 250ms linear;
+  transition: background-color 250ms linear, width 250ms linear;
 }
 
 .hero__slider-nav-btn .active-slide {
@@ -848,16 +843,16 @@ button {
 @media screen and (min-width: 768px) {
   .hero__text {
     width: 349px;
-    margin-bottom: 146px;
+    margin-bottom: 172px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__text {
     width: 400px;
     font-size: 18px;
     line-height: 1.66;
-    margin-bottom: 150px;
+    margin-bottom: 148px;
   }
 }
 
@@ -1496,13 +1491,13 @@ button {
 
 .footer__first-container {
   background-color: #191c26;
-  padding: 84px 30px;
+  padding: 64px 30px 84px 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .footer__first-container {
     width: 640px;
-    padding: 130px 30px 192px 55px;
+    padding: 110px 30px 192px 55px;
     margin-left: -40px;
   }
 }
@@ -1678,6 +1673,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 20px;
 }
 
 .footer__form-name {
