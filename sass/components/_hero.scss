@@ -186,6 +186,7 @@
 	&:hover,
 	&:focus {
 		outline: none;
+		-webkit-tap-highlight-color: transparent;
 	}
 
 	& .slide {
@@ -261,6 +262,7 @@
 		outline: none;
 		color: $lightTextColor;
 		border-color: $lightTextColor;
+		-webkit-tap-highlight-color: transparent;
 	}
 }
 .hero__prev-slide {
