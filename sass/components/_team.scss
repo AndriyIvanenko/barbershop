@@ -69,10 +69,18 @@
 	padding: 12px;
 	transition: color 250ms linear;
 
-	&:hover,
-	&:focus {
+	@media screen and (min-width: 1200px) {
+		&:hover,
+		&:focus {
+			outline: none;
+			color: $accentColor;
+		}
+	}
+
+	&:active {
 		outline: none;
 		color: $accentColor;
+		-webkit-tap-highlight-color: transparent;
 	}
 }
 .team__sm-icon {

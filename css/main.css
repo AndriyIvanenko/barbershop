@@ -1276,9 +1276,17 @@ button {
   transition: color 250ms linear;
 }
 
-.team__sm-link:hover, .team__sm-link:focus {
+@media screen and (min-width: 1200px) {
+  .team__sm-link:hover, .team__sm-link:focus {
+    outline: none;
+    color: #ff6c00;
+  }
+}
+
+.team__sm-link:active {
   outline: none;
   color: #ff6c00;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .team__sm-icon {
@@ -1451,6 +1459,7 @@ button {
 .footer__sm-link:hover, .footer__sm-link:focus {
   color: #ff6c00;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .footer__copyright {
@@ -1647,6 +1656,7 @@ button {
 .address__link:hover, .address__link:focus {
   color: #fff;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media screen and (min-width: 400px) {

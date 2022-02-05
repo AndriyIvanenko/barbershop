@@ -121,6 +121,7 @@
 	&:focus {
 		color: $accentColor;
 		outline: none;
+		-webkit-tap-highlight-color: transparent;
 	}
 }
 .footer__copyright {
