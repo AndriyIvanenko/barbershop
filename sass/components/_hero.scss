@@ -251,15 +251,22 @@
 
 	color: $transparentTextColor;
 
-	transition: color 250ms linear, border-color 250ms linear;
+	transition: color 100ms linear, border-color 100ms linear;
 
 	@media screen and (min-width: 480px) {
 		padding-bottom: 8px;
 	}
 
-	&:hover,
-	&:focus {
-		outline: none;
+	@media screen and (min-width: 1200px) {
+		&:hover,
+		&:focus {
+			outline: none;
+			color: $lightTextColor;
+			border-color: $lightTextColor;
+		}
+	}
+
+	&:active {
 		color: $lightTextColor;
 		border-color: $lightTextColor;
 		-webkit-tap-highlight-color: transparent;

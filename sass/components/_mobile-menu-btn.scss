@@ -1,6 +1,6 @@
 .mobile-menu-open {
 	fill: $lightTextColor;
-	transition: fill 250ms linear, opacity 50ms linear;
+	transition: fill 50ms linear, opacity 50ms linear;
 }
 .mobile-menu-close {
 	fill: $primaryTextColor;
@@ -27,9 +27,11 @@
 	// &:hover .mobile-menu-open,
 	// &:hover .mobile-menu-close,
 	// &:focus .mobile-menu-open,
-	// &:focus .mobile-menu-close {
-	// 	fill: $accentColor;
-	// }
+	// &:focus .mobile-menu-close,
+	&:active .mobile-menu-open,
+	&:active .mobile-menu-close {
+		fill: $accentColor;
+	}
 
 	@media screen and (min-width: 768px) {
 		display: none;

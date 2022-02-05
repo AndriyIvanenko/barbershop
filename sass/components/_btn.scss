@@ -20,5 +20,6 @@
 		background-color: $accentColor;
 		color: $lightTextColor;
 		outline: none;
+		-webkit-tap-highlight-color: transparent;
 	}
 }
